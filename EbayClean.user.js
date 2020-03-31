@@ -19,7 +19,7 @@
     
     var groups = document.URL.match(/^(https?:\/\/(?:www\.)?ebay.com\/itm)(?:\/[0-9a-zA-Z\-]+)(\/\d+)/);
     
-    if (groups.length === 3 groups[1]+groups[2] != document.URL)
+    if (groups.length === 3 && groups[1]+groups[2] != document.URL)
     {
       history.replaceState(null, '', groups[1]+groups[2]);
     }
