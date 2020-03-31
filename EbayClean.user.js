@@ -10,7 +10,8 @@
 // @homepageURL https://github.com/Duckle29/EbayClean
 // @downloadURL https://raw.githubusercontent.com/Duckle29/EbayClean/master/EbayClean.user.js
 // @updateURL   https://raw.githubusercontent.com/Duckle29/EbayClean/master/EbayClean.user.js
-// @version     1.3
+// @version     1.4
+// @history     1.4 Fixed .de regex in both places -_-
 // @history     1.3 Fixed .de regex
 // @history     1.2 Fixed homepage URL
 // @history     1.1 Added support for .co.uk and .de
@@ -19,7 +20,7 @@
 
 (function() {
     'use strict';    
-    var groups = document.URL.match(/^(https?:\/\/(?:www\.)?ebay\.(?:com|co\.uk|\de)\/itm)(?:\/[0-9a-zA-Z\-]+)(\/\d+)/);
+    var groups = document.URL.match(/^(https?:\/\/(?:www\.)?ebay\.(?:com|co\.uk|de)\/itm)(?:\/[0-9a-zA-Z\-]+)(\/\d+)/);
     
     if (groups.length === 3 && groups[1]+groups[2] != document.URL)
     {
