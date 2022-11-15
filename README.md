@@ -1,4 +1,5 @@
 # EbayClean
+## Check out [UrlClean](https://github.com/Duckle29/url_clean). Works for multiple sites
 A userscript to clean up Ebay URLs
 
 If you have a userscript plugin like:
